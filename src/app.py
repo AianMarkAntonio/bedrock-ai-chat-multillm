@@ -11,7 +11,7 @@ def fetch_bedrock_response(prompt):
             "Content-Type": "application/json"
         }
         response = requests.post(
-            url="https://dsb1qxkgnj.execute-api.ap-southeast-1.amazonaws.com/dev/chat/multillm",
+            url="https://dsb1qxkgnj.execute-api.ap-southeast-1.amazonaws.com/dev/chat/smo-agent",
             json={"prompt": prompt},
             headers=headers
         )
